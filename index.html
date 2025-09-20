@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laundry Kilat - Cepat & Rapi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Laundry Kilat</h1>
+      <nav class="nav">
+        <a href="#services">Layanan</a>
+        <a href="#pricing">Harga</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Jasa Laundry Cepat, Bersih, dan Terpercaya</h2>
+        <p>Pick-up & delivery tersedia. Cuci kering, setrika, dan paket hemat mingguan.</p>
+        <a class="btn" href="#contact">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>Pelayanan Kami</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Cuci & Kering</h4>
+          <p>Cucian dipisah berdasarkan warna dan jenis kain, proses lembut, hasil wangi.</p>
+        </div>
+        <div class="card">
+          <h4>Setrika Rapi</h4>
+          <p>Pilihan setrika standar atau profesional untuk pakaian kerja dan formal.</p>
+        </div>
+        <div class="card">
+          <h4>Express 24 Jam</h4>
+          <p>Butuh cepat? Gunakan layanan express kami, selesai dalam 24 jam.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing">
+      <h3>Daftar Harga</h3>
+      <ul>
+        <li>Cuci Kering: Rp10.000 / kg</li>
+        <li>Setrika: Rp5.000 / item</li>
+        <li>Paket Hemat (10kg): Rp90.000</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Kontak & Lokasi</h3>
+      <p>Alamat: Jl. Contoh No.123, Kota Anda</p>
+      <p>Jam Operasional: Senin - Sabtu, 08:00 - 18:00</p>
+
+      <form class="contact-form" onsubmit="alert('Form ini hanya contoh — integrasi backend diperlukan.'); return false;">
+        <label>
+          Nama
+          <input type="text" name="name" placeholder="Nama lengkap" required>
+        </label>
+        <label>
+          No. Telepon
+          <input type="tel" name="phone" placeholder="08xx xxxx xxxx" required>
+        </label>
+        <label>
+          Pesan
+          <textarea name="message" placeholder="Detail pesanan atau pertanyaan" required></textarea>
+        </label>
+        <button class="btn" type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Laundry Kilat — Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
